@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --blue: rgba(3, 227, 254, 1);
+}
+
+a {
+  @apply drop-shadow-[1px_1px_0px_rgba(3,_227,_254,_0.3)] underline hover:no-underline hover:drop-shadow-none;
+}
+
+button,
+input[type="submit"] {
+  @apply font-semibold active:shadow-none active:-mr-1 active:ml-1 active:mt-1 active:-mb-1 text-2xl bg-gray-300 shadow-lg p-2 border-2 border-t-gray-200 border-l-gray-200 border-b-gray-500 border-r-gray-500;
+}
+
+h1 {
+  @apply text-5xl font-bold uppercase text-[#03E3FE] drop-shadow-[2px_2px_0px_#000000] break-all;
+}
+
+dl {
+  @apply p-2 rounded text-left border border-[rgba(3,227,254,1)];
+}
+
+dl dt {
+  @apply font-bold mt-2;
+}
+
+dl dd {
+  @apply break-all;
+}
